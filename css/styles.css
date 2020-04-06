@@ -8,6 +8,10 @@ body {
   border: solid black 1px;
 }
 
+#list {
+  display: none;
+}
+
 #results {
   display: none;
 }

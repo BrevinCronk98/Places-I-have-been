@@ -49,6 +49,7 @@ function Places(locations, landmarks, time, notes) {
 
   // UI --------
   var entryList = new EntryList();
+
    
   function displayEntryInfo(entryBookToDisplay) {
       var travelList = $("ul#list");
@@ -59,6 +60,8 @@ function Places(locations, landmarks, time, notes) {
       travelList.html(htmlForInfo);
   }
 
+
+
 $(document).ready(function() {
   $("form#place-info").submit(function(event){
     event.preventDefault();
@@ -67,29 +70,18 @@ $(document).ready(function() {
     var timeInput = $("input#date");
     var notesInput = $("input#notes");
     var newPlaces = new Places (locationsInput.val(), landmarkInput.val(), timeInput.val(), notesInput.val());
+
+
+    //clear all fields after pressing Submit
+    $("input#country").val("");
+    $("input#landmark").val("");
+    $("input#date").val("");
+    $("input#notes").val("");
+   
     entryList.addEntry(newPlaces);
-    // console.log(newPlaces);
-    console.log(entryList.entries);
-    console.log(entryList.landmark);
     displayEntryInfo(entryList);
-    
-    // $("#display-travels").text(entryList.entries);
-    
-    // $("#display-locations").text(newPlaces.locations);
-    // $("#display-landmark").text(newPlaces.landmarks).hide();
-    // $("#display-date").text(newPlaces.time).hide();
-    // $("#display-notes").text(newPlaces.notes).hide();
 
-    // $("#display-locations").click(function() {
-    //   $("#display-landmark").show();
-    //   $("#display-date").show();
-    //   $("#display-notes").show();
-      
-    // });
-
-  
-    
-    //alert(newPlaces)
+    $("#list").show();
   });
 });
 
