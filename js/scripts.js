@@ -60,9 +60,18 @@ function Places(locations, landmarks, time, notes) {
       travelList.html(htmlForInfo);
   }
 
+  function attatchEntryListener () {
+      $("#hide").on("click", function(){
+          $("#list").toggle();
+      });
+  }
+
+//   function delete
+
 
 
 $(document).ready(function() {
+    attatchEntryListener()
   $("form#place-info").submit(function(event){
     event.preventDefault();
     var locationsInput = $("input#country");
@@ -80,8 +89,6 @@ $(document).ready(function() {
    
     entryList.addEntry(newPlaces);
     displayEntryInfo(entryList);
-
-    $("#list").show();
   });
 });
 

@@ -8,14 +8,16 @@ body {
   border: solid black 1px;
 }
 
-#list {
-  display: none;
-}
-
 #results {
   display: none;
 }
 
 #list {
   font-size: 25px;
+}
+
+#hide{
+  float: right;
+  background-color: whitesmoke;
+  border: solid black 1px;
 }
