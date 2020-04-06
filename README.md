@@ -1,12 +1,12 @@
-# _Mr Roger's neigborhood_
+# _Places I've been_
 
-#### _Practice using looping in JavaScript to Create a web application that takes a number from a user and returns a range of numbers from 0 to the user inputted number_
+#### _Practice using constructors and prototypes in JavaScript to Create a web application where user can track of all the places he've been_
 
-#### By _**Ivan Lebedzeu - April 2, 2020**_
+#### By _**Ivan Lebedzeu, Erick Grove, Brevin Cronk - April 6, 2020**_
 
 ## Description
 
-_a web application that takes a number from a user and returns a range of numbers from 0 to the user inputted number with the following exceptions: Numbers that contain a 1: all digits are replaced (all digits) with "Beep!"; Numbers that contain a 2: all digits are replaced (all digits) with "Boop!"; Numbers that contain a 3: all digits are replaced (all digits) with "Won't you be my neighbor?"_
+_a web application _
 
 ## Setup/Installation Requirements
 
@@ -14,16 +14,15 @@ _a web application that takes a number from a user and returns a range of number
 * Navigate to index.html file through your file interface.
 * Right click and open in the browser of your choice.
 
-* Alternatively, open the webpage at https://ivanlebedzeu.github.io/robogers_neighborhood/
+* Alternatively, open the webpage at https://ivanlebedzeu.github.io/places-youve-been/
 
 ## Known Bugs
 
-Works only for single digits numbers 
+No bugs 
 
 ## Support and contact details
 
-If you have any suggestions or questions please email me at ivan.lebedzeu1@gmail.com
-
+If you have any suggestions or questions please email us at ivan.lebedzeu1@gmail.com or cronkbrevin98@gmail.com or erick email!!!!
 ## Technologies Used
 
 HTML
