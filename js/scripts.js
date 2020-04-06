@@ -15,7 +15,7 @@ EntryList.prototype.assignId = function(){
 }
 
 EntryList.prototype.findEntry = function(id) {
-    for (var i=0; i< this.entries.lenth; i++){
+    for (var i=0; i< this.entries.length; i++){
         if(this.entries[i]){
             if(this.entries[i].id == id){
                 return this.entries[i]
@@ -64,14 +64,15 @@ function Places(locations, landmarks, time, notes) {
       $("#hide").on("click", function(){
           $("#list").toggle();
       });
-  }
+    }
+
 
 //   function delete
 
 
 
 $(document).ready(function() {
-    attatchEntryListener()
+    attatchEntryListener();
   $("form#place-info").submit(function(event){
     event.preventDefault();
     var locationsInput = $("input#country");
@@ -89,6 +90,10 @@ $(document).ready(function() {
    
     entryList.addEntry(newPlaces);
     displayEntryInfo(entryList);
+
+    $(entryList).click(function(event){
+        $(newPlaces).remove();
+    });
   });
 });
 
