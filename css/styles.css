@@ -8,8 +8,10 @@ body {
   border: solid black 1px;
 }
 
-
-
 #results {
   display: none;
+}
+
+#list {
+  font-size: 25px;
 }
