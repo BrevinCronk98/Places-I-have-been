@@ -7,3 +7,9 @@ body {
   background-color: whitesmoke;
   border: solid black 1px;
 }
+
+
+
+#results {
+  display: none;
+}
